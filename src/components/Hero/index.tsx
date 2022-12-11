@@ -14,7 +14,11 @@ const Hero = () => {
             <div className="hero-title-top">Learn.Build.Connect.</div>
             <div className="hero-title-bottom" aria-hidden="true">Learn.Build.Connect.</div>
           </div>
-          <p className="description">FrontendInit is the community for frontend developers, providing the mentorship, roadmap, resources, hacktons, jobs, and inspiration that frontend developers need to kickstart their career.</p>
+          <div className="wrapper-mobile">
+            <div className="hero-title-top">Learn.<br /> Build.<br />Connect.</div>
+            <div className="hero-title-bottom" aria-hidden="true">Learn.<br /> Build.<br /> Connect.</div>
+          </div>
+          <p className="description">FrontendInit is the community for frontend developers, providing mentorship, roadmap, resources, hacktons, jobs, and inspiration that frontend developers need to kickstart their career.</p>
           <Link href="/" className="heroBtn">Join the community</Link>
           <div className="hero-topic">
             <p className="sub-title">Topics we talk about</p>

@@ -80,38 +80,38 @@ export default class MyDocument extends Document {
 
           <link rel="shortcut icon" href="/public/favicon.ico" />
           <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="I write code, think about great designs, founder of FrontendProf, Content Creator, Technical Writer. I am passionate about solving business problems through human-centered design." />
+          <meta name="description" content="FrontendInit is the community for frontend developers, providing the mentorship, roadmap, resources, hacktons, jobs, and inspiration that frontend developers need to kickstart their career." />
 
           {/*<!-- Google / Search Engine Tags -->*/}
-          <meta itemProp="name" content="Caleb Benjamin Portfolio" />
-          <meta itemProp="description" content="I write code, think about great designs, founder of FrontendProf, Content Creator, Technical Writer. I am passionate about solving business problems through human-centered design." />
+          <meta itemProp="name" content="FrontendInit | Lean.Build.Connect." />
+          <meta itemProp="description" content="FrontendInit is the community for frontend developers, providing the mentorship, roadmap, resources, hacktons, jobs, and inspiration that frontend developers need to kickstart their career." />
           <meta
             itemProp="image"
-            content="https://res.cloudinary.com/calebbenjin/image/upload/v1665089575/Screenshot_128_jhoeym.png"
+            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670748872/Screenshot_183_osemji.png"
           />
 
           {/*<!-- Facebook Meta Tags -->*/}
-          <meta property="og:title" content="Caleb Benjamin Portfolio" />
-          <meta property="og:description" content="I write code, think about great designs, founder of FrontendProf, Content Creator, Technical Writer. I am passionate about solving business problems through human-centered design." />
+          <meta property="og:title" content="FrontendInit | Lean.Build.Connect." />
+          <meta property="og:description" content="FrontendInit is the community for frontend developers, providing the mentorship, roadmap, resources, hacktons, jobs, and inspiration that frontend developers need to kickstart their career." />
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/calebbenjin/image/upload/v1665089575/Screenshot_128_jhoeym.png"
+            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670748872/Screenshot_183_osemji.png"
           />
           <meta property="og:url" content="https://calebbenjin.vercel.app/" />
           <meta property="og:type" content="website" />
 
           {/*<!-- Twitter Meta Tags -->*/}
-          <meta name="twitter:title" content="Caleb Benjamin Portfolio" />
-          <meta name="twitter:description" content="I write code, think about great designs, founder of FrontendProf, Content Creator, Technical Writer. I am passionate about solving business problems through human-centered design." />
+          <meta name="twitter:title" content="FrontendInit | Lean.Build.Connect." />
+          <meta name="twitter:description" content="FrontendInit is the community for frontend developers, providing the mentorship, roadmap, resources, hacktons, jobs, and inspiration that frontend developers need to kickstart their career." />
           <meta
             name="twitter:image"
-            content="https://res.cloudinary.com/calebbenjin/image/upload/v1665089575/Screenshot_128_jhoeym.png"
+            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670748872/Screenshot_183_osemji.png"
           />
           <meta name="twitter:card" content="summary_large_image" />
 
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/calebbenjin/image/upload/v1665089575/Screenshot_128_jhoeym.png"
+            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670748872/Screenshot_183_osemji.png"
           ></meta>
       </Head>
       <body>

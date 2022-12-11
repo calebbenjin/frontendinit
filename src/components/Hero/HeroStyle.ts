@@ -73,6 +73,9 @@ export const HeroWrapper = styled.div`
     }
   }
 
+  .wrapper-mobile {
+    display: none;
+  }
 
   .wrapper {
     color: var(--black);
@@ -80,6 +83,7 @@ export const HeroWrapper = styled.div`
     display: grid;
     font-size: 7rem;
     font-family: 'Inter', sans-serif;
+    
   }
 
   .wrapper>div {
@@ -90,7 +94,7 @@ export const HeroWrapper = styled.div`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg, #ff4d4d, #f9cb28);
+    background-image: linear-gradient(90deg, #007cf0, #ff0080, #ff4d4d);
     clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
   }
 
@@ -119,10 +123,21 @@ export const HeroWrapper = styled.div`
     height: 100%;
     padding-top: 6rem;
 
-    .wrapper {
-      font-size: 1.5rem;
+    .wrapper-mobile {
+      color: var(--black);
+      font-weight: 900;
+      display: grid;
+      font-size: 4rem;
       font-family: 'Inter', sans-serif;
-      margin-bottom: 0.5rem;
+      line-height: 5rem;
+    }
+
+    .wrapper-mobile>div {
+      grid-area: 1/1/-1/-1;
+    }
+
+    .wrapper {
+      display: none;
     }
 
     .heroContent {
@@ -165,6 +180,7 @@ export const HeroWrapper = styled.div`
       .description {
         font-size: 1rem;
         width: 100%;
+        margin-top: 1rem;
       }
 
       .heroBtn {
