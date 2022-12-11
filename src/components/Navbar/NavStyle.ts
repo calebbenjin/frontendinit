@@ -18,7 +18,7 @@ export const NavbarWrapper = styled.nav`
 
   .logo .brev {
     background: var(--black);
-    color: var(--white);
+    color: #FFDE59;
     padding: 0 0.4rem;
   }
 

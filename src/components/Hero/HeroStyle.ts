@@ -94,7 +94,7 @@ export const HeroWrapper = styled.div`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg, #007cf0, #ff0080, #ff4d4d);
+    background-image: linear-gradient(90deg, #FFDE59, #FFDE59, #ff0080);
     clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
   }
 

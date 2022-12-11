@@ -87,7 +87,7 @@ export default class MyDocument extends Document {
           <meta itemProp="description" content="FrontendInit is the community for frontend developers, providing the mentorship, roadmap, resources, hacktons, jobs, and inspiration that frontend developers need to kickstart their career." />
           <meta
             itemProp="image"
-            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670748872/Screenshot_183_osemji.png"
+            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670752371/Screenshot_186_lk5qov.png"
           />
 
           {/*<!-- Facebook Meta Tags -->*/}
@@ -95,7 +95,7 @@ export default class MyDocument extends Document {
           <meta property="og:description" content="FrontendInit is the community for frontend developers, providing the mentorship, roadmap, resources, hacktons, jobs, and inspiration that frontend developers need to kickstart their career." />
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670748872/Screenshot_183_osemji.png"
+            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670752371/Screenshot_186_lk5qov.png"
           />
           <meta property="og:url" content="https://calebbenjin.vercel.app/" />
           <meta property="og:type" content="website" />
@@ -105,13 +105,13 @@ export default class MyDocument extends Document {
           <meta name="twitter:description" content="FrontendInit is the community for frontend developers, providing the mentorship, roadmap, resources, hacktons, jobs, and inspiration that frontend developers need to kickstart their career." />
           <meta
             name="twitter:image"
-            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670748872/Screenshot_183_osemji.png"
+            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670752371/Screenshot_186_lk5qov.png"
           />
           <meta name="twitter:card" content="summary_large_image" />
 
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670748872/Screenshot_183_osemji.png"
+            content="https://res.cloudinary.com/calebbenjin/image/upload/v1670752371/Screenshot_186_lk5qov.png"
           ></meta>
       </Head>
       <body>
