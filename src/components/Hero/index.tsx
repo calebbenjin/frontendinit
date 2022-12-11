@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="hero-title-bottom" aria-hidden="true">Learn.<br /> Build.<br /> Connect.</div>
           </div>
           <p className="description">FrontendInit is the community for frontend developers, providing mentorship, roadmap, resources, hacktons, jobs, and inspiration that frontend developers need to kickstart their career.</p>
-          <Link href="/" className="heroBtn">Join the community</Link>
+          <Link href="https://join.slack.com/t/frontendinit/shared_invite/zt-1kwe1jiq9-fUPLB54R_LxMLXkJr2XEog" className="heroBtn">Join the community</Link>
           <div className="hero-topic">
             <p className="sub-title">Topics we talk about</p>
             <div className="grid">
