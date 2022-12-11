@@ -97,7 +97,7 @@ export default class MyDocument extends Document {
             property="og:image"
             content="https://res.cloudinary.com/calebbenjin/image/upload/v1670752371/Screenshot_186_lk5qov.png"
           />
-          <meta property="og:url" content="https://calebbenjin.vercel.app/" />
+          <meta property="og:url" content="https://frontendinit.com/" />
           <meta property="og:type" content="website" />
 
           {/*<!-- Twitter Meta Tags -->*/}
