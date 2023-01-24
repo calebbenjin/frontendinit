@@ -1,7 +1,6 @@
 import Navbar from './Navbar'
-import Hero from './Hero'
-import Ourvalues from './Ourvalues'
+import Hero from './HeroSection'
 
 
 
-export { Navbar, Hero, Ourvalues }
+export { Navbar, Hero }

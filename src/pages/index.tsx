@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Hero, Navbar, Ourvalues } from '../components'
+import HeroSection from '../components/HeroSection'
+import OfferSection from '../components/OfferSection'
+import TeamSection from '../components/TeamSection'
 
 const Home: NextPage = () => {
   return (
@@ -11,11 +13,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Navbar />
-        <Hero />
-        {/* <Ourvalues /> */}
-      </main>
+      <HeroSection />
+      <OfferSection />
+      <TeamSection />
     </div>
   )
 }
