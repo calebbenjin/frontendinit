@@ -64,7 +64,7 @@ export default function HeroSection() {
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
                   <Link
                     href="https://xv9ksjbk76s.typeform.com/to/QFnRUXAO"
-                    className="inline-block rounded-lg bg-indigo-600 px-4 py-3 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+                    className="inline-block shadow-lg rounded-lg bg-indigo-600 px-6 py-3 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
                   >
                     Join the community
                     <span className="text-indigo-200" aria-hidden="true">
@@ -72,11 +72,11 @@ export default function HeroSection() {
                     </span>
                   </Link>
                 </div>
-                <div className="flex items-center sm:w-60 mx-auto justify-around mt-20">
+                {/* <div className="flex items-center sm:w-60 mx-auto justify-around mt-20">
                     <FiTwitter className="h-8 w-8" />
                     <BsLinkedin className="h-8 w-8" />
                     <BsGithub className="h-8 w-8" />
-                </div>
+                </div> */}
               </div>
               <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
                 <svg
