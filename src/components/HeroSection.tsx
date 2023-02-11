@@ -4,6 +4,7 @@ import Navbar from "./Navbar"
 import  {FiTwitter}  from 'react-icons/fi'
 import  {BsGithub, BsLinkedin}  from 'react-icons/bs'
 import Link from "next/link"
+import { motion as m } from 'framer-motion'
 
 
 
@@ -40,8 +41,8 @@ export default function HeroSection() {
       </div>
       <Navbar />
       <main>
-        <div className="relative h-screen flex items-center justify-center px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl pt-20 pb-32 sm:pt-30 sm:pb-20">
+        <div className="relative h-auto sm:h-screen flex items-center justify-center px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl pt-40 pb-10 sm:pt-30 sm:pb-20">
             <div>
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
@@ -54,14 +55,29 @@ export default function HeroSection() {
                   </span>
                 </div>
               </div>
-              <div>
-                <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-8xl">
+              <div className="overflow-hidden">
+                <m.h1
+                  animate={{ y: 0 }}
+                  initial={{ y: "100%" }}
+                  transition={{ duration: 0.5 }}
+                  className="text-4xl font-bold tracking-tight sm:text-center sm:text-8xl">
                   The Frontend Engineer Growth Community
-                </h1>
-                <p className="my-6 sm:text-2xl sm:mx-40 text-lg leading-8 text-gray-600 sm:text-center">
+                </m.h1>
+                <m.p
+                  animate={{ y: 0 }}
+                  initial={{ y: "100%" }}
+                  transition={{ duration: 0.7}}
+                  className="my-6 sm:text-2xl sm:mx-40 text-lg leading-8 text-gray-600 sm:text-center">
+                  Join a fast-growing community built for frontend developers to learn, build and connect. We know it is time to grow in your career, and FrontendInit is here to ace it.
+                </m.p>
+                {/* <p className="my-6 sm:text-2xl sm:mx-40 text-lg leading-8 text-gray-600 sm:text-center">
                   Join a fast growing frontend developer community, A community build for frontend developers to  save you time and grow fast in your career.
-                </p>
-                <div className="mt-8 flex gap-x-4 sm:justify-center">
+                </p> */}
+                <m.div
+                  animate={{ y: 0 }}
+                  initial={{ y: "100%" }}
+                  transition={{ duration: 0.9}}
+                  className="mt-8 flex gap-x-4 sm:justify-center">
                   <Link
                     href="https://xv9ksjbk76s.typeform.com/to/QFnRUXAO"
                     className="inline-block shadow-lg rounded-lg bg-indigo-600 px-6 py-3 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
@@ -71,7 +87,7 @@ export default function HeroSection() {
                       &rarr;
                     </span>
                   </Link>
-                </div>
+                </m.div>
                 {/* <div className="flex items-center sm:w-60 mx-auto justify-around mt-20">
                     <FiTwitter className="h-8 w-8" />
                     <BsLinkedin className="h-8 w-8" />

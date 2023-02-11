@@ -47,8 +47,7 @@ export default function OfferSection() {
           <h2 className="text-lg font-semibold leading-8 text-indigo-600">Reasons</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Why Join a Community?</p>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-            accusamus quisquam.
+            Join a fast-growing community built for frontend developers to learn, build and connect. We know it is time to grow in your career, and FrontendInit is here to ace it.
           </p>
         </div>
 

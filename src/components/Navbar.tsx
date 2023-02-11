@@ -18,7 +18,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="px-6 pt-6 lg:px-8">
+    <div className="px-6 pt-6 lg:px-8 z-10 fixed top-0 w-full">
         <div>
           <nav className="flex h-9 items-center justify-between" aria-label="Global">
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">

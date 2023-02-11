@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# JetBrains IDE files
+.idea/
+
 # testing
 /coverage
 
@@ -33,3 +36,4 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+next-env.d.ts

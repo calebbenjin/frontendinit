@@ -1,9 +1,11 @@
 import React from 'react'
 import { Navbar } from '../components'
+import { easeOut, motion as m} from 'framer-motion'
 
 const ResourcesPage = () => {
   return (
-    <div className="isolate bg-white">
+    <div
+      className="isolate bg-white">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -31,8 +33,12 @@ const ResourcesPage = () => {
           </defs>
         </svg>
       </div>
-      <Navbar />
-      <main>
+      <m.main
+        initial={{ y: "100%" }}
+        animate={{ y: "0%" }}
+        transition={{ duration: 0.76, easings: easeOut }}
+        exit={{ opacity: 1 }}
+      >
         <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
             <div>
@@ -44,7 +50,7 @@ const ResourcesPage = () => {
             </div>
           </div>
         </div>
-      </main>
+      </m.main>
     </div>
   )
 }
