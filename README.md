@@ -1,5 +1,8 @@
-## WELCOM TO EASEPLAN.IO 📃🚀🎯
+## WELCOME TO FRONTENDINIT 📃🚀🎯
 
+### The Frontend Engineer Growth Community
+
+Join a fast-growing community built for frontend developers to learn, build and connect. We know it is time to grow in your career, and FrontendInit is here to ace it.
 
 ## Features
 
