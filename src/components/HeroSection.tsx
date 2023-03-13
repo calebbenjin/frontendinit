@@ -1,16 +1,23 @@
 /* This example requires Tailwind CSS v3.0+ */
 
-import Navbar from "./Navbar"
-import  {FiTwitter}  from 'react-icons/fi'
-import  {BsGithub, BsLinkedin}  from 'react-icons/bs'
-import Link from "next/link"
-
-
+import Navbar from './Navbar';
+import { FiTwitter } from 'react-icons/fi';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import Link from 'next/link';
+import Image from 'next/image';
+import bottomImg from '@/public/bottombg.png';
+import topRightImg from '@/public/DecoreTopRight.png';
 
 export default function HeroSection() {
-
   return (
     <div className="isolate bg-white">
+      <Image
+        src={topRightImg}
+        className="absolute top-0 right-0"
+        alt="heroimg"
+        width={500}
+        height={500}
+      />
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -40,36 +47,40 @@ export default function HeroSection() {
       </div>
       <Navbar />
       <main>
-        <div className="relative h-screen flex items-center justify-center px-6 lg:px-8">
+        <div className="relative h-auto sm:pt-20 flex items-center justify-center px-6 lg:px-8">
+          <Image
+            src={bottomImg}
+            className="fixed bottom-0 left-0"
+            alt="heroimg"
+            width={500}
+            height={500}
+          />
           <div className="mx-auto max-w-7xl pt-20 pb-32 sm:pt-30 sm:pb-20">
             <div>
-              <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+              {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center max-w-4xl mx-auto text-center">
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                   <span className="text-gray-600">
-                    Announcing our first onboarding on the {' '}
-                    <span className="font-semibold text-indigo-600">
-                      <span className="absolute inset-0" aria-hidden="true" />
-                      18 feb 2023<span aria-hidden="true">&rarr;</span>
-                    </span>
+                    Hello there! Welcome to this page! As you can see, we&apos;re in
+                    the early stages of development right now and we don&apos;t even
+                    have a proper website yet, <b>so you&apos;re going to become a
+                    pioneer if you choose to join FrontendInit today!</b>
                   </span>
                 </div>
-              </div>
+              </div> */}
               <div>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-8xl">
                   The Frontend Engineer Growth Community
                 </h1>
                 <p className="my-6 sm:text-2xl sm:mx-40 text-lg leading-8 text-gray-600 sm:text-center">
-                  Join a fast growing frontend developer community, A community build for frontend developers to  save you time and grow fast in your career.
+                  Join amazing Frontend Developers helping each other learn and
+                  build in a thriving community.
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
                   <Link
-                    href="https://xv9ksjbk76s.typeform.com/to/QFnRUXAO"
-                    className="inline-block shadow-lg rounded-lg bg-indigo-600 px-6 py-3 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+                    href="https://discord.gg/CsmuqGkQeg"
+                    className="inline-block shadow-lg rounded-lg bg-gray-900 px-6 py-4 text-base font-semibold leading-7 text-white shadow-lg"
                   >
-                    Join the community
-                    <span className="text-indigo-200" aria-hidden="true">
-                      &rarr;
-                    </span>
+                    JION OUR DISCORD CHANNEL
                   </Link>
                 </div>
                 {/* <div className="flex items-center sm:w-60 mx-auto justify-around mt-20">
@@ -110,5 +121,5 @@ export default function HeroSection() {
         </div>
       </main>
     </div>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import HeroSection from '../components/HeroSection'
-import OfferSection from '../components/OfferSection'
-import TeamSection from '../components/TeamSection'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import HeroSection from '../components/HeroSection';
+import OfferSection from '../components/OfferSection';
+import TeamSection from '../components/TeamSection';
 
 const Home: NextPage = () => {
   return (
@@ -15,9 +15,9 @@ const Home: NextPage = () => {
 
       <HeroSection />
       <OfferSection />
-      <TeamSection />
+      {/* <TeamSection /> */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

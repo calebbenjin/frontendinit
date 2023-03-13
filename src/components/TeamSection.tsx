@@ -1,6 +1,6 @@
 /*
   This example requires some changes to your config:
-  
+
   ```
   // tailwind.config.js
   module.exports = {
@@ -17,7 +17,8 @@ const products = [
     id: 1,
     name: 'Basic Tee',
     href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageSrc:
+      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
@@ -26,7 +27,8 @@ const products = [
     id: 2,
     name: 'Basic Tee',
     href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageSrc:
+      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
@@ -35,7 +37,8 @@ const products = [
     id: 3,
     name: 'Basic Tee',
     href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageSrc:
+      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
@@ -44,22 +47,25 @@ const products = [
     id: 4,
     name: 'Basic Tee',
     href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageSrc:
+      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
   },
-]
+];
 
 export default function TeamSection() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-      <div className="sm:text-center">
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Team / Contributors</p>
+        <div className="sm:text-center">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Team / Contributors
+          </p>
           <p className="mx-auto mt-6 mb-10 max-w-2xl text-lg leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-            accusamus quisquam.
+            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
+            voluptatum cupiditate veritatis in accusamus quisquam.
           </p>
         </div>
 
@@ -88,5 +94,5 @@ export default function TeamSection() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,10 +1,79 @@
-import React from 'react'
-import { Navbar } from '../components'
+import React from 'react';
+import { Navbar } from '../components';
+
+const freeResourceData = [
+  {
+    id: 1,
+    title: 'DEVELOPMENT TOOLS',
+    info: [
+      {
+        icon: 'icon',
+        title: 'Visual Studio Code',
+        text: 'The best text editor in the world. See next resource for my current setup.',
+        url: 'https://code.visualstudio.com/',
+      },
+      {
+        icon: 'icon',
+        title: 'My Visual Studio Code Setup',
+        text: 'Check out exactly what theme, extensions and settings I currently use in VSCode.',
+        url: 'https://github.com/jonasschmedtmann/html-css-course/blob/master/vscode-setup.md',
+      },
+      {
+        icon: 'icon',
+        title: 'Codepen',
+        text: 'Codepen is an essential tool to quickly test out ideas. I use it in multiple courses too.',
+        url: 'https://codepen.io/',
+      },
+      {
+        icon: 'icon',
+        title: 'Emmet Cheat Sheet',
+        text: 'Emmet is an essential tool for writing HTML. I teach it in my advanced CSS course. This is a very handy cheat sheet to get started.',
+        url: 'https://docs.emmet.io/cheat-sheet/',
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: 'HTML5 RESOURCES',
+    info: [
+      {
+        icon: 'icon',
+        title: 'HTML5 Reference by MDN',
+        text: "You don't need to know every HTML element. I just use this excellent reference all the time.",
+        url: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element',
+      },
+      {
+        icon: 'icon',
+        title: 'HTML Entity Reference by CSS-Tricks',
+        text: 'Super useful reference, gives you HTML entity name, numeric code, hex code and ISO code.',
+        url: 'https://css-tricks.com/snippets/html/glyphs/',
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: 'FREE CSS RESOURCES',
+    info: [
+      {
+        icon: 'icon',
+        title: 'CSS3 Reference by MDN',
+        text: "As with HTML, you don't need to know every CSS property. Use this reference instead.",
+        url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/Reference',
+      },
+      {
+        icon: 'icon',
+        title: 'HTML Entity Reference by CSS-Tricks',
+        text: 'Super useful reference, gives you HTML entity name, numeric code, hex code and ISO code.',
+        url: 'https://css-tricks.com/snippets/html/glyphs/',
+      },
+    ],
+  },
+];
 
 const ResourcesPage = () => {
   return (
     <div className="isolate bg-white">
-      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-10rem]">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
           viewBox="0 0 1155 678"
@@ -32,21 +101,37 @@ const ResourcesPage = () => {
         </svg>
       </div>
       <Navbar />
-      <main>
-        <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
-            <div>
-              <div>
-                <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-                  Resources Coming Soon!! 🥰😎
-                </h1>
-              </div>
-            </div>
+      <div className="relative px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+          <div>
+            <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+              Free Web Developement Resources
+            </h1>
+            <p className="mt-4 tracking-tight sm:text-center sm:text-lg">
+              Access Free web development resources
+            </p>
           </div>
         </div>
+      </div>
+      <main>
+        {/* <div className="container mx-auto px-20">
+          {freeResourceData.map((data) => (
+            <>
+              <h4>{data?.title}</h4>
+              <div className="grid grid-cols-4 mb-10">
+                {data?.info.map((data, i) => (
+                  <div key={i} className="card">
+                    <p>{data.title}</p>
+                  </div>
+                ))}
+              </div>
+              ;
+            </>
+          ))}
+        </div> */}
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default ResourcesPage
+export default ResourcesPage;
