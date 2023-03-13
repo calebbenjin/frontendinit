@@ -1,9 +1,15 @@
-import React from 'react'
-import { Navbar } from '../../components'
+import React from 'react';
+import { Navbar } from '../../components';
+import { easeInOut, motion as m } from 'framer-motion';
 
 const BlogPage = () => {
   return (
-    <div className="isolate bg-white">
+    <m.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.86, easings: easeInOut }}
+      className="isolate bg-white"
+    >
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -31,7 +37,6 @@ const BlogPage = () => {
           </defs>
         </svg>
       </div>
-      <Navbar />
       <main>
         <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
@@ -45,8 +50,8 @@ const BlogPage = () => {
           </div>
         </div>
       </main>
-    </div>
-  )
-}
+    </m.div>
+  );
+};
 
-export default BlogPage
+export default BlogPage;

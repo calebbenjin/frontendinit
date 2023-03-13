@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar } from '../components';
+import { easeOut, motion as m } from 'framer-motion';
 
 const freeResourceData = [
   {
@@ -73,7 +74,7 @@ const freeResourceData = [
 const ResourcesPage = () => {
   return (
     <div className="isolate bg-white">
-      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-10rem]">
+      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
           viewBox="0 0 1155 678"
@@ -100,36 +101,24 @@ const ResourcesPage = () => {
           </defs>
         </svg>
       </div>
-      <Navbar />
-      <div className="relative px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
-          <div>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-              Free Web Developement Resources
-            </h1>
-            <p className="mt-4 tracking-tight sm:text-center sm:text-lg">
-              Access Free web development resources
-            </p>
+      <m.main
+        initial={{ y: '100%' }}
+        animate={{ y: '0%' }}
+        transition={{ duration: 0.76, easings: easeOut }}
+        exit={{ opacity: 1 }}
+      >
+        <div className="relative px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+            <div>
+              <div>
+                <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+                  Resources Coming Soon!! 🥰😎
+                </h1>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <main>
-        {/* <div className="container mx-auto px-20">
-          {freeResourceData.map((data) => (
-            <>
-              <h4>{data?.title}</h4>
-              <div className="grid grid-cols-4 mb-10">
-                {data?.info.map((data, i) => (
-                  <div key={i} className="card">
-                    <p>{data.title}</p>
-                  </div>
-                ))}
-              </div>
-              ;
-            </>
-          ))}
-        </div> */}
-      </main>
+      </m.main>
     </div>
   );
 };
